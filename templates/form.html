@@ -1,0 +1,54 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Prediction Form</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h2>Loan Approval Prediction Form</h2>
+    <form action="/predict" method="POST">
+        <!-- Input fields for prediction form go here, as previously defined -->
+
+        <label for="no_of_dependents">Number of Dependents:</label>
+      <input type="number" id="no_of_dependents" name="no_of_dependents"><br>
+  
+      <label for="education">Education (1: Graduate, 0: Not Graduate):</label>
+      <input type="number" id="education" name="education" step="0.1"><br>
+  
+      <label for="self_employed">Self Employed (1: Yes, 0: No):</label>
+      <input type="number" id="self_employed" name="self_employed" step="0.1"><br>
+  
+      <label for="income_annum">Annual Income:</label>
+      <input type="number" id="income_annum" name="income_annum"><br>
+  
+      <label for="loan_amount">Loan Amount:</label>
+      <input type="number" id="loan_amount" name="loan_amount"><br>
+  
+      <label for="loan_term">Loan Term (in months):</label>
+      <input type="number" id="loan_term" name="loan_term"><br>
+  
+      <label for="cibil_score">CIBIL Score:</label>
+      <input type="number" id="cibil_score" name="cibil_score"><br>
+  
+      <label for="residential_assets_value">Residential Assets Value:</label>
+      <input type="number" id="residential_assets_value" name="residential_assets_value"><br>
+  
+      <label for="commercial_assets_value">Commercial Assets Value:</label>
+      <input type="number" id="commercial_assets_value" name="commercial_assets_value"><br>
+  
+      <label for="luxury_assets_value">Luxury Assets Value:</label>
+      <input type="number" id="luxury_assets_value" name="luxury_assets_value"><br>
+  
+      <label for="bank_asset_value">Bank Asset Value:</label>
+      <input type="number" id="bank_asset_value" name="bank_asset_value"><br>
+        <button type="submit">Submit</button>
+    </form>
+    <a href="/">Back to Home</a>
+</body>
+</html>
